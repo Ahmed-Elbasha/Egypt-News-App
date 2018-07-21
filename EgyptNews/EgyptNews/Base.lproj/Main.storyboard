@@ -32,7 +32,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6FA-UN-oRE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="آقتصاد" id="Q2L-DF-Y4A"/>
+                    <tabBarItem key="tabBarItem" title="آقتصاد" image="noun_Business_1682759" selectedImage="noun_Business_1682759" id="Q2L-DF-Y4A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tR-yJ-kgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,7 +60,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vOD-ch-5Yz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="فن" id="Ku1-rd-QAc"/>
+                    <tabBarItem key="tabBarItem" title="فن" image="noun_arts_1497592" selectedImage="noun_arts_1497592" id="Ku1-rd-QAc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPT-dP-v5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +88,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b4s-S6-OE8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="سياسة" id="O44-fa-qXe"/>
+                    <tabBarItem key="tabBarItem" title="سياسة" image="noun_Vote_16443" selectedImage="noun_Vote_16443" id="O44-fa-qXe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkY-Aq-fpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +116,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="رياضة" id="nsc-wE-YIB"/>
+                    <tabBarItem key="tabBarItem" title="رياضة" image="noun_Sports_909439" selectedImage="noun_Sports_909439" id="nsc-wE-YIB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,7 +144,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FCk-2O-AYH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="تكنولوجيا" id="eDs-zj-akr"/>
+                    <tabBarItem key="tabBarItem" title="تكنولوجيا" image="noun_Technology_345852" selectedImage="noun_Technology_345852" id="eDs-zj-akr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1x-9D-cxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,6 +156,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="R9j-Qo-uqs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MnA-Fl-NiW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -172,4 +173,11 @@
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="noun_Business_1682759" width="30" height="30"/>
+        <image name="noun_Sports_909439" width="30" height="30"/>
+        <image name="noun_Technology_345852" width="30" height="30"/>
+        <image name="noun_Vote_16443" width="30" height="30"/>
+        <image name="noun_arts_1497592" width="30" height="30"/>
+    </resources>
 </document>
