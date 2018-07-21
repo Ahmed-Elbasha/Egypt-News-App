@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R9j-Qo-uqs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--آقتصاد-->
+        <scene sceneID="V8C-VC-nNL">
+            <objects>
+                <viewController id="mpC-Bz-9I8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="onz-Bt-QUW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is Business News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpl-pb-C97">
+                                <rect key="frame" x="100" y="323" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rpl-pb-C97" firstAttribute="centerX" secondItem="onz-Bt-QUW" secondAttribute="centerX" id="hZW-FY-Zyw"/>
+                            <constraint firstItem="Rpl-pb-C97" firstAttribute="centerY" secondItem="onz-Bt-QUW" secondAttribute="centerY" id="oFa-yy-U3j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6FA-UN-oRE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="آقتصاد" id="Q2L-DF-Y4A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tR-yJ-kgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-2072"/>
+        </scene>
+        <!--فن-->
+        <scene sceneID="Eyp-3p-9c8">
+            <objects>
+                <viewController id="g9L-3H-LNX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wQ9-eF-GQj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is Entertainment News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBf-G7-Zri">
+                                <rect key="frame" x="81" y="323" width="213" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OBf-G7-Zri" firstAttribute="centerX" secondItem="wQ9-eF-GQj" secondAttribute="centerX" id="oMI-Yn-9qH"/>
+                            <constraint firstItem="OBf-G7-Zri" firstAttribute="centerY" secondItem="wQ9-eF-GQj" secondAttribute="centerY" id="wZp-qE-j1i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vOD-ch-5Yz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="فن" id="Ku1-rd-QAc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPT-dP-v5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-1341"/>
+        </scene>
+        <!--سياسة-->
+        <scene sceneID="ZrW-7S-8fe">
+            <objects>
+                <viewController id="aDA-RV-F31" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M6w-cj-OgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is Politics News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzO-Rz-Mc6">
+                                <rect key="frame" x="107.5" y="323" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uzO-Rz-Mc6" firstAttribute="centerX" secondItem="M6w-cj-OgJ" secondAttribute="centerX" id="Cwp-xd-1TX"/>
+                            <constraint firstItem="uzO-Rz-Mc6" firstAttribute="centerY" secondItem="M6w-cj-OgJ" secondAttribute="centerY" id="FZR-sd-z3d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b4s-S6-OE8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="سياسة" id="O44-fa-qXe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GkY-Aq-fpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-618"/>
+        </scene>
+        <!--رياضة-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is Sports News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEu-BC-omG">
+                                <rect key="frame" x="109" y="323" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hEu-BC-omG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="07p-9C-rim"/>
+                            <constraint firstItem="hEu-BC-omG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9x3-6m-zU8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="رياضة" id="nsc-wE-YIB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="118.29085457271366"/>
+        </scene>
+        <!--تكنولوجيا-->
+        <scene sceneID="Urg-pN-Scp">
+            <objects>
+                <viewController id="XBX-44-PzE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bPv-Nh-cFY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is Technology News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9c-kn-Eaj">
+                                <rect key="frame" x="90.5" y="323" width="193.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i9c-kn-Eaj" firstAttribute="centerY" secondItem="bPv-Nh-cFY" secondAttribute="centerY" id="Xo4-lR-VTB"/>
+                            <constraint firstItem="i9c-kn-Eaj" firstAttribute="centerX" secondItem="bPv-Nh-cFY" secondAttribute="centerX" id="iBk-z2-qRM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FCk-2O-AYH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="تكنولوجيا" id="eDs-zj-akr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1x-9D-cxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="858"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9mK-d7-k5v">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="R9j-Qo-uqs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MnA-Fl-NiW">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="H4r-0O-61n"/>
+                        <segue destination="XBX-44-PzE" kind="relationship" relationship="viewControllers" id="cE2-rK-Jeg"/>
+                        <segue destination="aDA-RV-F31" kind="relationship" relationship="viewControllers" id="wRy-A4-MHv"/>
+                        <segue destination="g9L-3H-LNX" kind="relationship" relationship="viewControllers" id="Ovn-Rc-acB"/>
+                        <segue destination="mpC-Bz-9I8" kind="relationship" relationship="viewControllers" id="pZi-to-9iD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5U-7E-ffo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
