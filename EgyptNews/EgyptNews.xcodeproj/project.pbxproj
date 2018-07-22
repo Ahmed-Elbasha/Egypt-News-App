@@ -19,9 +19,12 @@
 		7E23A2F62103C50E004D60D5 /* TechnologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23A2F52103C50E004D60D5 /* TechnologyViewController.swift */; };
 		7E23A2F82103C663004D60D5 /* ShowNewsArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23A2F72103C663004D60D5 /* ShowNewsArticleViewController.swift */; };
 		7E72E4802104A51A005FBB3E /* NewsArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72E47F2104A51A005FBB3E /* NewsArticleCell.swift */; };
+		FBBA33376D945D9A23B15D89 /* libPods-EgyptNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B36AD5A8E1C7F8279D2689 /* libPods-EgyptNews.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45F9C6BE1BE9A6ADE1499758 /* Pods-EgyptNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgyptNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-EgyptNews/Pods-EgyptNews.release.xcconfig"; sourceTree = "<group>"; };
+		4A50277CD175B24AFDBC78B2 /* Pods-EgyptNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgyptNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EgyptNews/Pods-EgyptNews.debug.xcconfig"; sourceTree = "<group>"; };
 		7E23A2D62103803D004D60D5 /* EgyptNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EgyptNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E23A2D92103803D004D60D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E23A2DB2103803E004D60D5 /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		7E23A2F52103C50E004D60D5 /* TechnologyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnologyViewController.swift; sourceTree = "<group>"; };
 		7E23A2F72103C663004D60D5 /* ShowNewsArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNewsArticleViewController.swift; sourceTree = "<group>"; };
 		7E72E47F2104A51A005FBB3E /* NewsArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleCell.swift; sourceTree = "<group>"; };
+		A9B36AD5A8E1C7F8279D2689 /* libPods-EgyptNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EgyptNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBBA33376D945D9A23B15D89 /* libPods-EgyptNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18D320E1AA4FD76000E299AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B36AD5A8E1C7F8279D2689 /* libPods-EgyptNews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6560DC5D6A54E4B42C6CB942 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A50277CD175B24AFDBC78B2 /* Pods-EgyptNews.debug.xcconfig */,
+				45F9C6BE1BE9A6ADE1499758 /* Pods-EgyptNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7E23A2CD2103803D004D60D5 = {
 			isa = PBXGroup;
 			children = (
 				7E23A2D82103803D004D60D5 /* EgyptNews */,
 				7E23A2D72103803D004D60D5 /* Products */,
+				6560DC5D6A54E4B42C6CB942 /* Pods */,
+				18D320E1AA4FD76000E299AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E23A2EB21038043004D60D5 /* Build configuration list for PBXNativeTarget "EgyptNews" */;
 			buildPhases = (
+				35847BF397BE1AF6B9153765 /* [CP] Check Pods Manifest.lock */,
 				7E23A2D22103803D004D60D5 /* Sources */,
 				7E23A2D32103803D004D60D5 /* Frameworks */,
 				7E23A2D42103803D004D60D5 /* Resources */,
@@ -166,6 +191,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35847BF397BE1AF6B9153765 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EgyptNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E23A2D22103803D004D60D5 /* Sources */ = {
@@ -322,6 +368,7 @@
 		};
 		7E23A2EC21038043004D60D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A50277CD175B24AFDBC78B2 /* Pods-EgyptNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +386,7 @@
 		};
 		7E23A2ED21038043004D60D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F9C6BE1BE9A6ADE1499758 /* Pods-EgyptNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
