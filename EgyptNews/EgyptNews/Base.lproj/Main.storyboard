@@ -253,6 +253,22 @@
                                     <constraint firstItem="xhh-ER-AUN" firstAttribute="centerY" secondItem="DJ8-SO-We2" secondAttribute="centerY" id="z9j-56-yi4"/>
                                 </constraints>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikw-Lj-uTE">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار فن في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-Gy-yHy">
+                                        <rect key="frame" x="79.5" y="289" width="216" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fsl-Gy-yHy" firstAttribute="centerX" secondItem="ikw-Lj-uTE" secondAttribute="centerX" id="CKN-bm-CGI"/>
+                                    <constraint firstItem="fsl-Gy-yHy" firstAttribute="centerY" secondItem="ikw-Lj-uTE" secondAttribute="centerY" constant="32.25" id="T6D-r7-BKn"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wXy-DA-yak">
                                 <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -295,6 +311,9 @@
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZB-qV-gfo">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="228"/>
+                                                    <connections>
+                                                        <segue destination="eqe-Tx-fQj" kind="showDetail" id="LOf-6J-YcY"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -315,22 +334,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikw-Lj-uTE">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار فن في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-Gy-yHy">
-                                        <rect key="frame" x="79.5" y="289" width="216" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="fsl-Gy-yHy" firstAttribute="centerX" secondItem="ikw-Lj-uTE" secondAttribute="centerX" id="CKN-bm-CGI"/>
-                                    <constraint firstItem="fsl-Gy-yHy" firstAttribute="centerY" secondItem="ikw-Lj-uTE" secondAttribute="centerY" constant="32.25" id="T6D-r7-BKn"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -445,6 +448,9 @@
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlZ-WE-4Li">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="228"/>
+                                                    <connections>
+                                                        <segue destination="eqe-Tx-fQj" kind="showDetail" id="l2b-qn-p9V"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -592,4 +598,7 @@
         <image name="noun_arts_1497592" width="30" height="30"/>
         <image name="reload" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="l2b-qn-p9V"/>
+    </inferredMetricsTieBreakers>
 </document>
