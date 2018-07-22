@@ -13,22 +13,146 @@
         <!--آقتصاد-->
         <scene sceneID="V8C-VC-nNL">
             <objects>
-                <viewController id="mpC-Bz-9I8" sceneMemberID="viewController">
+                <viewController id="mpC-Bz-9I8" customClass="BusinessViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="onz-Bt-QUW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is Business News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpl-pb-C97">
-                                <rect key="frame" x="100" y="323" width="174" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jF-Jc-wpH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6r-1K-Rsy">
+                                        <rect key="frame" x="321" y="9" width="46" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="n2o-61-3R2"/>
+                                        </constraints>
+                                        <state key="normal" image="reload"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFY-v9-zoz">
+                                        <rect key="frame" x="137" y="21" width="101" height="23"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w17-nR-njq">
+                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="23"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kf6-FN-wmL">
+                                                <rect key="frame" x="53.5" y="0.0" width="47.5" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="K6r-1K-Rsy" secondAttribute="bottom" constant="9" id="7VZ-GU-irb"/>
+                                    <constraint firstItem="VFY-v9-zoz" firstAttribute="centerY" secondItem="9jF-Jc-wpH" secondAttribute="centerY" id="BHr-Cz-I0o"/>
+                                    <constraint firstItem="VFY-v9-zoz" firstAttribute="centerX" secondItem="9jF-Jc-wpH" secondAttribute="centerX" id="GXM-Vr-iah"/>
+                                    <constraint firstItem="VFY-v9-zoz" firstAttribute="centerY" secondItem="9jF-Jc-wpH" secondAttribute="centerY" id="W71-hg-UUZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="K6r-1K-Rsy" secondAttribute="trailing" constant="8" id="exR-al-6Te"/>
+                                    <constraint firstItem="K6r-1K-Rsy" firstAttribute="leading" secondItem="VFY-v9-zoz" secondAttribute="trailing" constant="83" id="iBM-fe-CXK"/>
+                                    <constraint firstItem="K6r-1K-Rsy" firstAttribute="top" secondItem="9jF-Jc-wpH" secondAttribute="top" constant="9" id="iQA-1f-zOu"/>
+                                    <constraint firstAttribute="height" constant="64" id="j4q-00-lp1"/>
+                                    <constraint firstItem="K6r-1K-Rsy" firstAttribute="centerY" secondItem="9jF-Jc-wpH" secondAttribute="centerY" id="wdZ-FF-5hJ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Rh-AN-AmM">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsArticle" rowHeight="228" id="BAG-DG-4rj" customClass="NewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="228"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BAG-DG-4rj" id="Wb0-Ri-0Id">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="227.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ihA-DO-o9o">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="228"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEF-YR-8dC">
+                                                    <rect key="frame" x="0.0" y="143" width="375" height="84"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Article Source Goes Here." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3D-tb-fHJ">
+                                                            <rect key="frame" x="114" y="50" width="245" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article Title Goes Here." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIg-8B-ZHc">
+                                                            <rect key="frame" x="114" y="14" width="245" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20580051369863014" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="i3D-tb-fHJ" firstAttribute="top" secondItem="WIg-8B-ZHc" secondAttribute="bottom" constant="15" id="2ak-bQ-hY2"/>
+                                                        <constraint firstItem="i3D-tb-fHJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WIg-8B-ZHc" secondAttribute="leading" id="H77-Jx-P69"/>
+                                                        <constraint firstItem="i3D-tb-fHJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kEF-YR-8dC" secondAttribute="leading" constant="20" symbolic="YES" id="Jlp-Dx-pc8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="WIg-8B-ZHc" secondAttribute="trailing" constant="16" id="NFd-34-mp6"/>
+                                                        <constraint firstAttribute="bottom" secondItem="i3D-tb-fHJ" secondAttribute="bottom" constant="13" id="XzV-CT-fqo"/>
+                                                        <constraint firstAttribute="trailing" secondItem="i3D-tb-fHJ" secondAttribute="trailing" constant="16" id="ydT-k5-nJI"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Po-E7-TXY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="228"/>
+                                                    <connections>
+                                                        <segue destination="eqe-Tx-fQj" kind="showDetail" id="t06-Gk-SHL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ihA-DO-o9o" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" id="3YJ-ch-19c"/>
+                                                <constraint firstAttribute="bottom" secondItem="9Po-E7-TXY" secondAttribute="bottom" id="68f-FD-P75"/>
+                                                <constraint firstItem="ihA-DO-o9o" firstAttribute="top" secondItem="Wb0-Ri-0Id" secondAttribute="top" id="9kL-d7-etd"/>
+                                                <constraint firstAttribute="trailing" secondItem="ihA-DO-o9o" secondAttribute="trailing" id="EXm-ZX-fM2"/>
+                                                <constraint firstItem="9Po-E7-TXY" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" id="Kcx-30-GJP"/>
+                                                <constraint firstItem="kEF-YR-8dC" firstAttribute="top" secondItem="Wb0-Ri-0Id" secondAttribute="top" constant="143" id="Nwh-sw-wNo"/>
+                                                <constraint firstAttribute="bottom" secondItem="ihA-DO-o9o" secondAttribute="bottom" id="WlP-7E-z1O"/>
+                                                <constraint firstItem="kEF-YR-8dC" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" id="YYT-IR-62A"/>
+                                                <constraint firstAttribute="bottom" secondItem="kEF-YR-8dC" secondAttribute="bottom" id="bDa-lE-ABf"/>
+                                                <constraint firstAttribute="trailing" secondItem="kEF-YR-8dC" secondAttribute="trailing" id="fHu-Cv-qB5"/>
+                                                <constraint firstItem="9Po-E7-TXY" firstAttribute="top" secondItem="Wb0-Ri-0Id" secondAttribute="top" id="fsK-Yr-WYX"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Po-E7-TXY" secondAttribute="trailing" id="gMl-PS-iM3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii8-II-3ei">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار اقتصاد في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scE-Mm-kFn">
+                                        <rect key="frame" x="65.5" y="257.5" width="243.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="scE-Mm-kFn" firstAttribute="centerX" secondItem="Ii8-II-3ei" secondAttribute="centerX" id="4Sx-ob-Q56"/>
+                                    <constraint firstItem="scE-Mm-kFn" firstAttribute="centerY" secondItem="Ii8-II-3ei" secondAttribute="centerY" id="4uN-gD-0tJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Rpl-pb-C97" firstAttribute="centerX" secondItem="onz-Bt-QUW" secondAttribute="centerX" id="hZW-FY-Zyw"/>
-                            <constraint firstItem="Rpl-pb-C97" firstAttribute="centerY" secondItem="onz-Bt-QUW" secondAttribute="centerY" id="oFa-yy-U3j"/>
+                            <constraint firstItem="9Rh-AN-AmM" firstAttribute="leading" secondItem="6FA-UN-oRE" secondAttribute="leading" id="GIO-7L-5TC"/>
+                            <constraint firstItem="Ii8-II-3ei" firstAttribute="leading" secondItem="6FA-UN-oRE" secondAttribute="leading" id="HLc-hZ-MBy"/>
+                            <constraint firstItem="Ii8-II-3ei" firstAttribute="trailing" secondItem="6FA-UN-oRE" secondAttribute="trailing" id="KBu-f3-ZdA"/>
+                            <constraint firstItem="9Rh-AN-AmM" firstAttribute="trailing" secondItem="6FA-UN-oRE" secondAttribute="trailing" id="NLF-8z-kZw"/>
+                            <constraint firstItem="Ii8-II-3ei" firstAttribute="top" secondItem="9jF-Jc-wpH" secondAttribute="bottom" id="Wif-G0-Wxl"/>
+                            <constraint firstItem="9jF-Jc-wpH" firstAttribute="leading" secondItem="onz-Bt-QUW" secondAttribute="leading" id="X74-ZZ-3MW"/>
+                            <constraint firstItem="9Rh-AN-AmM" firstAttribute="top" secondItem="9jF-Jc-wpH" secondAttribute="bottom" id="b9g-n4-YIf"/>
+                            <constraint firstItem="9jF-Jc-wpH" firstAttribute="top" secondItem="6FA-UN-oRE" secondAttribute="top" id="f8c-7D-Tlq"/>
+                            <constraint firstItem="Ii8-II-3ei" firstAttribute="bottom" secondItem="6FA-UN-oRE" secondAttribute="bottom" id="iBa-GT-hSH"/>
+                            <constraint firstItem="9Rh-AN-AmM" firstAttribute="bottom" secondItem="6FA-UN-oRE" secondAttribute="bottom" id="sgz-TV-4kK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6FA-UN-oRE"/>
                     </view>
@@ -36,12 +160,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tR-yJ-kgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="-2072"/>
+            <point key="canvasLocation" x="1056.8" y="-2072.1139430284861"/>
+        </scene>
+        <!--Show News Article View Controller-->
+        <scene sceneID="DM3-Uh-wwI">
+            <objects>
+                <viewController id="eqe-Tx-fQj" customClass="ShowNewsArticleViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BRB-VV-tox">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5o-8e-gPZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="off-jH-Cyw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="enf-jr-hpy">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="back_btn" id="TxS-zG-SSV"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="off-jH-Cyw" firstAttribute="top" secondItem="umV-nM-Yzg" secondAttribute="top" id="Cbp-nS-zaC"/>
+                            <constraint firstItem="n5o-8e-gPZ" firstAttribute="top" secondItem="umV-nM-Yzg" secondAttribute="top" id="Cse-vI-e75"/>
+                            <constraint firstItem="n5o-8e-gPZ" firstAttribute="trailing" secondItem="umV-nM-Yzg" secondAttribute="trailing" id="QM2-xy-fOl"/>
+                            <constraint firstItem="off-jH-Cyw" firstAttribute="trailing" secondItem="umV-nM-Yzg" secondAttribute="trailing" id="caQ-qk-mEv"/>
+                            <constraint firstItem="off-jH-Cyw" firstAttribute="leading" secondItem="umV-nM-Yzg" secondAttribute="leading" id="pQr-Mn-aUq"/>
+                            <constraint firstItem="n5o-8e-gPZ" firstAttribute="leading" secondItem="umV-nM-Yzg" secondAttribute="leading" id="rpm-73-MgJ"/>
+                            <constraint firstItem="n5o-8e-gPZ" firstAttribute="bottom" secondItem="umV-nM-Yzg" secondAttribute="bottom" id="siB-Zz-2g1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="umV-nM-Yzg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQ7-uX-gmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221.5999999999999" y="-1342.5787106446778"/>
         </scene>
         <!--فن-->
         <scene sceneID="Eyp-3p-9c8">
             <objects>
-                <viewController id="g9L-3H-LNX" sceneMemberID="viewController">
+                <viewController id="g9L-3H-LNX" customClass="ArtsViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQ9-eF-GQj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +235,7 @@
         <!--سياسة-->
         <scene sceneID="ZrW-7S-8fe">
             <objects>
-                <viewController id="aDA-RV-F31" sceneMemberID="viewController">
+                <viewController id="aDA-RV-F31" customClass="PoliticsViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M6w-cj-OgJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +263,7 @@
         <!--رياضة-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SportsViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,7 +291,7 @@
         <!--تكنولوجيا-->
         <scene sceneID="Urg-pN-Scp">
             <objects>
-                <viewController id="XBX-44-PzE" sceneMemberID="viewController">
+                <viewController id="XBX-44-PzE" customClass="TechnologyViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bPv-Nh-cFY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,10 +340,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_btn" width="13" height="21"/>
         <image name="noun_Business_1682759" width="30" height="30"/>
         <image name="noun_Sports_909439" width="30" height="30"/>
         <image name="noun_Technology_345852" width="30" height="30"/>
         <image name="noun_Vote_16443" width="30" height="30"/>
         <image name="noun_arts_1497592" width="30" height="30"/>
+        <image name="reload" width="32" height="32"/>
     </resources>
 </document>

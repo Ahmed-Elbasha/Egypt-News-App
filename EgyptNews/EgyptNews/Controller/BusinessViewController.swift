@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BusinessViewController.swift
 //  EgyptNews
 //
 //  Created by Ahmed Elbasha on 7/21/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BusinessViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
