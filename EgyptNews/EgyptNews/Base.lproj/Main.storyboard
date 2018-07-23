@@ -136,6 +136,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="9Po-E7-TXY" secondAttribute="trailing" id="gMl-PS-iM3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsArticleImageView" destination="ihA-DO-o9o" id="Dkb-Tq-qwO"/>
+                                            <outlet property="newsArticleLabel" destination="WIg-8B-ZHc" id="gSY-by-A53"/>
+                                            <outlet property="newsArticleSourceLabel" destination="i3D-tb-fHJ" id="q2D-2q-mRp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -329,6 +334,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="oCR-jO-W1X" secondAttribute="bottom" id="xha-Nj-0oS"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsArticleImageView" destination="oCR-jO-W1X" id="wca-Qt-DP6"/>
+                                            <outlet property="newsArticleLabel" destination="Ne5-a2-7F8" id="pOs-Yh-xbu"/>
+                                            <outlet property="newsArticleSourceLabel" destination="yaw-sX-SHW" id="YbS-z1-kL0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -480,6 +490,11 @@
                                                 <constraint firstItem="nlZ-WE-4Li" firstAttribute="leading" secondItem="c81-zu-4pe" secondAttribute="leading" id="qDF-Ps-xML"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsArticleImageView" destination="tOh-1b-nRS" id="8qD-Lo-Ebm"/>
+                                            <outlet property="newsArticleLabel" destination="xFZ-r0-1Xc" id="cYD-z4-Qck"/>
+                                            <outlet property="newsArticleSourceLabel" destination="TSN-kd-Qqp" id="d9B-fv-Myn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -514,26 +529,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KF-2g-pxT">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6p-fp-R5u">
                                 <rect key="frame" x="0.0" y="20" width="375" height="64"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKt-hN-bAC">
-                                        <rect key="frame" x="321" y="9" width="46" height="46"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEJ-rR-enS">
+                                        <rect key="frame" x="313" y="9" width="46" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="46" id="Oc7-gD-oFX"/>
+                                            <constraint firstAttribute="width" constant="46" id="Lgy-Wa-T2t"/>
                                         </constraints>
                                         <state key="normal" image="reload"/>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YO6-8Q-jgQ">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4p-ED-Zeg">
                                         <rect key="frame" x="137" y="21" width="101" height="23"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZm-aj-7a1">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSF-zd-dfr">
                                                 <rect key="frame" x="0.0" y="0.0" width="53.5" height="23"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kw-QP-jK4">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgn-jZ-K3I">
                                                 <rect key="frame" x="53.5" y="0.0" width="47.5" height="23"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <nil key="textColor"/>
@@ -544,14 +559,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="YO6-8Q-jgQ" firstAttribute="centerX" secondItem="2KF-2g-pxT" secondAttribute="centerX" id="CA3-GL-JdP"/>
-                                    <constraint firstItem="UKt-hN-bAC" firstAttribute="leading" secondItem="YO6-8Q-jgQ" secondAttribute="trailing" constant="83" id="El6-PE-vmY"/>
-                                    <constraint firstItem="YO6-8Q-jgQ" firstAttribute="centerY" secondItem="2KF-2g-pxT" secondAttribute="centerY" id="QLo-at-cnz"/>
-                                    <constraint firstItem="UKt-hN-bAC" firstAttribute="centerY" secondItem="2KF-2g-pxT" secondAttribute="centerY" id="RbN-U2-itX"/>
-                                    <constraint firstItem="UKt-hN-bAC" firstAttribute="top" secondItem="2KF-2g-pxT" secondAttribute="top" constant="9" id="Scd-2A-v1K"/>
-                                    <constraint firstAttribute="trailing" secondItem="UKt-hN-bAC" secondAttribute="trailing" constant="8" id="eWz-CK-4dS"/>
-                                    <constraint firstAttribute="bottom" secondItem="UKt-hN-bAC" secondAttribute="bottom" constant="9" id="faQ-89-LHH"/>
-                                    <constraint firstAttribute="height" constant="64" id="w73-vb-mmD"/>
+                                    <constraint firstAttribute="height" constant="64" id="7DH-lT-jKQ"/>
+                                    <constraint firstItem="dEJ-rR-enS" firstAttribute="top" secondItem="g6p-fp-R5u" secondAttribute="top" constant="9" id="ERr-fc-gyo"/>
+                                    <constraint firstAttribute="trailing" secondItem="dEJ-rR-enS" secondAttribute="trailing" constant="16" id="S29-6c-u2P"/>
+                                    <constraint firstItem="L4p-ED-Zeg" firstAttribute="centerX" secondItem="g6p-fp-R5u" secondAttribute="centerX" id="bdd-bk-Xih"/>
+                                    <constraint firstItem="dEJ-rR-enS" firstAttribute="centerY" secondItem="g6p-fp-R5u" secondAttribute="centerY" id="hKW-bP-bIK"/>
+                                    <constraint firstAttribute="bottom" secondItem="dEJ-rR-enS" secondAttribute="bottom" constant="9" id="hmb-k7-fRy"/>
+                                    <constraint firstItem="L4p-ED-Zeg" firstAttribute="centerY" secondItem="g6p-fp-R5u" secondAttribute="centerY" id="uBl-G8-dxL"/>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mK0-aK-owC">
@@ -632,23 +646,28 @@
                                                 <constraint firstAttribute="trailing" secondItem="HwK-0r-AHL" secondAttribute="trailing" id="yfd-XV-N9F"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsArticleImageView" destination="HwK-0r-AHL" id="fFe-KE-auV"/>
+                                            <outlet property="newsArticleLabel" destination="SbL-T7-eLQ" id="C9W-Td-qA6"/>
+                                            <outlet property="newsArticleSourceLabel" destination="DGK-5A-tvq" id="QD5-BN-hgL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mK0-aK-owC" firstAttribute="top" secondItem="2KF-2g-pxT" secondAttribute="bottom" id="3tJ-ls-8Vd"/>
                             <constraint firstItem="AqY-us-FUC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9gd-U9-gqN"/>
-                            <constraint firstItem="2KF-2g-pxT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mqv-ZP-k9K"/>
+                            <constraint firstItem="g6p-fp-R5u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gkh-6g-0rA"/>
                             <constraint firstItem="AqY-us-FUC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pez-Og-AHv"/>
-                            <constraint firstItem="AqY-us-FUC" firstAttribute="top" secondItem="2KF-2g-pxT" secondAttribute="bottom" id="QNg-1n-S1E"/>
                             <constraint firstItem="mK0-aK-owC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T10-VF-Qhn"/>
+                            <constraint firstItem="mK0-aK-owC" firstAttribute="top" secondItem="g6p-fp-R5u" secondAttribute="bottom" id="eMc-Xo-idM"/>
                             <constraint firstItem="AqY-us-FUC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="g46-1O-fxt"/>
+                            <constraint firstItem="g6p-fp-R5u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="krX-t2-Iqv"/>
                             <constraint firstItem="mK0-aK-owC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p5v-yM-W16"/>
-                            <constraint firstItem="2KF-2g-pxT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pJc-CV-0Bd"/>
+                            <constraint firstItem="AqY-us-FUC" firstAttribute="top" secondItem="g6p-fp-R5u" secondAttribute="bottom" id="puC-pN-Twq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mK0-aK-owC" secondAttribute="bottom" id="qd1-9Y-O17"/>
-                            <constraint firstItem="2KF-2g-pxT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tBm-4d-pWb"/>
+                            <constraint firstItem="g6p-fp-R5u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="smn-8N-rv1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -783,6 +802,11 @@
                                                 <constraint firstItem="wGo-50-D6H" firstAttribute="top" secondItem="bKR-b3-hAU" secondAttribute="top" constant="143" id="qxe-jm-YaW"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsArticleImageView" destination="kS8-vo-ckt" id="koS-i8-4Jk"/>
+                                            <outlet property="newsArticleLabel" destination="h9l-mL-4Xk" id="Lnd-0n-gtQ"/>
+                                            <outlet property="newsArticleSourceLabel" destination="qFj-z6-fjq" id="doD-wk-D1N"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -842,6 +866,6 @@
         <image name="reload" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LUB-BY-yu2"/>
+        <segue reference="3xh-V9-oH0"/>
     </inferredMetricsTieBreakers>
 </document>
