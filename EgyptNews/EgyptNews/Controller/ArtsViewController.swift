@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import AlamofireImage
+import CoreData
 
 class ArtsViewController: UIViewController {
 

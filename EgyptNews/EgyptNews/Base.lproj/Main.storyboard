@@ -49,14 +49,29 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="K6r-1K-Rsy" secondAttribute="bottom" constant="9" id="7VZ-GU-irb"/>
-                                    <constraint firstItem="VFY-v9-zoz" firstAttribute="centerY" secondItem="9jF-Jc-wpH" secondAttribute="centerY" id="BHr-Cz-I0o"/>
                                     <constraint firstItem="VFY-v9-zoz" firstAttribute="centerX" secondItem="9jF-Jc-wpH" secondAttribute="centerX" id="GXM-Vr-iah"/>
                                     <constraint firstItem="VFY-v9-zoz" firstAttribute="centerY" secondItem="9jF-Jc-wpH" secondAttribute="centerY" id="W71-hg-UUZ"/>
+                                    <constraint firstItem="K6r-1K-Rsy" firstAttribute="leading" secondItem="VFY-v9-zoz" secondAttribute="trailing" constant="83" id="cTR-kd-9ti"/>
                                     <constraint firstAttribute="trailing" secondItem="K6r-1K-Rsy" secondAttribute="trailing" constant="8" id="exR-al-6Te"/>
-                                    <constraint firstItem="K6r-1K-Rsy" firstAttribute="leading" secondItem="VFY-v9-zoz" secondAttribute="trailing" constant="83" id="iBM-fe-CXK"/>
                                     <constraint firstItem="K6r-1K-Rsy" firstAttribute="top" secondItem="9jF-Jc-wpH" secondAttribute="top" constant="9" id="iQA-1f-zOu"/>
                                     <constraint firstAttribute="height" constant="64" id="j4q-00-lp1"/>
                                     <constraint firstItem="K6r-1K-Rsy" firstAttribute="centerY" secondItem="9jF-Jc-wpH" secondAttribute="centerY" id="wdZ-FF-5hJ"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii8-II-3ei">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار اقتصاد في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scE-Mm-kFn">
+                                        <rect key="frame" x="66.5" y="257" width="243.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="scE-Mm-kFn" firstAttribute="centerX" secondItem="Ii8-II-3ei" secondAttribute="centerX" id="4Sx-ob-Q56"/>
+                                    <constraint firstItem="scE-Mm-kFn" firstAttribute="centerY" secondItem="Ii8-II-3ei" secondAttribute="centerY" id="4uN-gD-0tJ"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Rh-AN-AmM">
@@ -124,22 +139,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii8-II-3ei">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار اقتصاد في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scE-Mm-kFn">
-                                        <rect key="frame" x="65.5" y="257.5" width="243.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="scE-Mm-kFn" firstAttribute="centerX" secondItem="Ii8-II-3ei" secondAttribute="centerX" id="4Sx-ob-Q56"/>
-                                    <constraint firstItem="scE-Mm-kFn" firstAttribute="centerY" secondItem="Ii8-II-3ei" secondAttribute="centerY" id="4uN-gD-0tJ"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -149,6 +148,7 @@
                             <constraint firstItem="9Rh-AN-AmM" firstAttribute="trailing" secondItem="6FA-UN-oRE" secondAttribute="trailing" id="NLF-8z-kZw"/>
                             <constraint firstItem="Ii8-II-3ei" firstAttribute="top" secondItem="9jF-Jc-wpH" secondAttribute="bottom" id="Wif-G0-Wxl"/>
                             <constraint firstItem="9jF-Jc-wpH" firstAttribute="leading" secondItem="onz-Bt-QUW" secondAttribute="leading" id="X74-ZZ-3MW"/>
+                            <constraint firstItem="9jF-Jc-wpH" firstAttribute="trailing" secondItem="Ii8-II-3ei" secondAttribute="trailing" id="abZ-MM-14W"/>
                             <constraint firstItem="9Rh-AN-AmM" firstAttribute="top" secondItem="9jF-Jc-wpH" secondAttribute="bottom" id="b9g-n4-YIf"/>
                             <constraint firstItem="9jF-Jc-wpH" firstAttribute="top" secondItem="6FA-UN-oRE" secondAttribute="top" id="f8c-7D-Tlq"/>
                             <constraint firstItem="Ii8-II-3ei" firstAttribute="bottom" secondItem="6FA-UN-oRE" secondAttribute="bottom" id="iBa-GT-hSH"/>
@@ -242,7 +242,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="M83-MV-SEn" firstAttribute="leading" secondItem="xhh-ER-AUN" secondAttribute="trailing" constant="83" id="5wu-4W-yzb"/>
                                     <constraint firstAttribute="bottom" secondItem="M83-MV-SEn" secondAttribute="bottom" constant="9" id="82b-Jx-2fr"/>
                                     <constraint firstItem="xhh-ER-AUN" firstAttribute="centerX" secondItem="DJ8-SO-We2" secondAttribute="centerX" id="Afc-77-hDO"/>
                                     <constraint firstAttribute="trailing" secondItem="M83-MV-SEn" secondAttribute="trailing" constant="8" id="XYY-z1-toS"/>
@@ -250,7 +249,22 @@
                                     <constraint firstItem="M83-MV-SEn" firstAttribute="centerY" secondItem="DJ8-SO-We2" secondAttribute="centerY" id="e3S-VI-IYZ"/>
                                     <constraint firstItem="M83-MV-SEn" firstAttribute="top" secondItem="DJ8-SO-We2" secondAttribute="top" constant="9" id="lhd-r6-j3w"/>
                                     <constraint firstAttribute="height" constant="64" id="o3J-H0-eca"/>
-                                    <constraint firstItem="xhh-ER-AUN" firstAttribute="centerY" secondItem="DJ8-SO-We2" secondAttribute="centerY" id="z9j-56-yi4"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikw-Lj-uTE">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار فن في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-Gy-yHy">
+                                        <rect key="frame" x="79.5" y="289" width="216" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fsl-Gy-yHy" firstAttribute="centerX" secondItem="ikw-Lj-uTE" secondAttribute="centerX" id="CKN-bm-CGI"/>
+                                    <constraint firstItem="fsl-Gy-yHy" firstAttribute="centerY" secondItem="ikw-Lj-uTE" secondAttribute="centerY" constant="32.25" id="T6D-r7-BKn"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wXy-DA-yak">
@@ -318,22 +332,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikw-Lj-uTE">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار فن في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-Gy-yHy">
-                                        <rect key="frame" x="79.5" y="289" width="216" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="fsl-Gy-yHy" firstAttribute="centerX" secondItem="ikw-Lj-uTE" secondAttribute="centerX" id="CKN-bm-CGI"/>
-                                    <constraint firstItem="fsl-Gy-yHy" firstAttribute="centerY" secondItem="ikw-Lj-uTE" secondAttribute="centerY" constant="32.25" id="T6D-r7-BKn"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -395,15 +393,29 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="lSs-EY-eAx" firstAttribute="centerY" secondItem="7kr-RO-aWF" secondAttribute="centerY" id="4CD-DJ-hlT"/>
                                     <constraint firstItem="lSs-EY-eAx" firstAttribute="centerY" secondItem="7kr-RO-aWF" secondAttribute="centerY" id="4DB-6p-eMD"/>
                                     <constraint firstAttribute="height" constant="64" id="7fZ-7M-MQs"/>
-                                    <constraint firstItem="oF7-nj-ABj" firstAttribute="leading" secondItem="lSs-EY-eAx" secondAttribute="trailing" constant="83" id="Ena-i6-hfH"/>
                                     <constraint firstItem="oF7-nj-ABj" firstAttribute="top" secondItem="7kr-RO-aWF" secondAttribute="top" constant="9" id="Q5E-Ac-z1f"/>
                                     <constraint firstAttribute="trailing" secondItem="oF7-nj-ABj" secondAttribute="trailing" constant="8" id="UK7-m8-sMN"/>
                                     <constraint firstItem="oF7-nj-ABj" firstAttribute="centerY" secondItem="7kr-RO-aWF" secondAttribute="centerY" id="Vh7-BN-Ao5"/>
                                     <constraint firstAttribute="bottom" secondItem="oF7-nj-ABj" secondAttribute="bottom" constant="9" id="btD-B2-REf"/>
                                     <constraint firstItem="lSs-EY-eAx" firstAttribute="centerX" secondItem="7kr-RO-aWF" secondAttribute="centerX" id="qjO-O2-3AU"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Et-gy-hit">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار سياسة في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsc-1I-g57">
+                                        <rect key="frame" x="67" y="282" width="240.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Zsc-1I-g57" firstAttribute="centerY" secondItem="8Et-gy-hit" secondAttribute="centerY" id="hLJ-cz-oeS"/>
+                                    <constraint firstItem="Zsc-1I-g57" firstAttribute="centerX" secondItem="8Et-gy-hit" secondAttribute="centerX" id="pAP-x3-YDa"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8IF-8j-0v0">
@@ -471,22 +483,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Et-gy-hit">
-                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار سياسة في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsc-1I-g57">
-                                        <rect key="frame" x="67" y="282" width="240.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="Zsc-1I-g57" firstAttribute="centerY" secondItem="8Et-gy-hit" secondAttribute="centerY" id="hLJ-cz-oeS"/>
-                                    <constraint firstItem="Zsc-1I-g57" firstAttribute="centerX" secondItem="8Et-gy-hit" secondAttribute="centerX" id="pAP-x3-YDa"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -553,10 +549,25 @@
                                     <constraint firstItem="YO6-8Q-jgQ" firstAttribute="centerY" secondItem="2KF-2g-pxT" secondAttribute="centerY" id="QLo-at-cnz"/>
                                     <constraint firstItem="UKt-hN-bAC" firstAttribute="centerY" secondItem="2KF-2g-pxT" secondAttribute="centerY" id="RbN-U2-itX"/>
                                     <constraint firstItem="UKt-hN-bAC" firstAttribute="top" secondItem="2KF-2g-pxT" secondAttribute="top" constant="9" id="Scd-2A-v1K"/>
-                                    <constraint firstItem="YO6-8Q-jgQ" firstAttribute="centerY" secondItem="2KF-2g-pxT" secondAttribute="centerY" id="bLz-Uq-jui"/>
                                     <constraint firstAttribute="trailing" secondItem="UKt-hN-bAC" secondAttribute="trailing" constant="8" id="eWz-CK-4dS"/>
                                     <constraint firstAttribute="bottom" secondItem="UKt-hN-bAC" secondAttribute="bottom" constant="9" id="faQ-89-LHH"/>
                                     <constraint firstAttribute="height" constant="64" id="w73-vb-mmD"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mK0-aK-owC">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار رياضة في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Av-Re-L55">
+                                        <rect key="frame" x="68.5" y="257.5" width="237.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4Av-Re-L55" firstAttribute="centerX" secondItem="mK0-aK-owC" secondAttribute="centerX" id="ctv-8N-ucr"/>
+                                    <constraint firstItem="4Av-Re-L55" firstAttribute="centerY" secondItem="mK0-aK-owC" secondAttribute="centerY" id="sns-d6-zaz"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AqY-us-FUC">
@@ -624,22 +635,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mK0-aK-owC">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار رياضة في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Av-Re-L55">
-                                        <rect key="frame" x="68.5" y="257.5" width="237.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="4Av-Re-L55" firstAttribute="centerX" secondItem="mK0-aK-owC" secondAttribute="centerX" id="ctv-8N-ucr"/>
-                                    <constraint firstItem="4Av-Re-L55" firstAttribute="centerY" secondItem="mK0-aK-owC" secondAttribute="centerY" id="sns-d6-zaz"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -675,7 +670,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atc-ht-nkU">
-                                        <rect key="frame" x="321" y="9" width="46" height="46"/>
+                                        <rect key="frame" x="313" y="9" width="46" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="46" id="VIb-BT-vVQ"/>
                                         </constraints>
@@ -703,13 +698,27 @@
                                 <constraints>
                                     <constraint firstItem="IRl-GD-k5D" firstAttribute="centerX" secondItem="xTr-rr-QPC" secondAttribute="centerX" id="FkF-GN-i5X"/>
                                     <constraint firstItem="IRl-GD-k5D" firstAttribute="centerY" secondItem="xTr-rr-QPC" secondAttribute="centerY" id="GM9-FK-9sH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Atc-ht-nkU" secondAttribute="trailing" constant="16" id="IL2-tS-TzD"/>
                                     <constraint firstItem="Atc-ht-nkU" firstAttribute="centerY" secondItem="xTr-rr-QPC" secondAttribute="centerY" id="WIe-8f-VNz"/>
                                     <constraint firstAttribute="height" constant="64" id="a8X-C4-k3L"/>
                                     <constraint firstItem="Atc-ht-nkU" firstAttribute="top" secondItem="xTr-rr-QPC" secondAttribute="top" constant="9" id="asz-ue-Ws4"/>
-                                    <constraint firstItem="Atc-ht-nkU" firstAttribute="leading" secondItem="IRl-GD-k5D" secondAttribute="trailing" constant="83" id="d7e-oP-aaJ"/>
-                                    <constraint firstItem="IRl-GD-k5D" firstAttribute="centerY" secondItem="xTr-rr-QPC" secondAttribute="centerY" id="eRn-CJ-yh8"/>
                                     <constraint firstAttribute="bottom" secondItem="Atc-ht-nkU" secondAttribute="bottom" constant="9" id="gBA-iN-rNX"/>
-                                    <constraint firstAttribute="trailing" secondItem="Atc-ht-nkU" secondAttribute="trailing" constant="8" id="yti-fj-P2P"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i86-3F-ElN">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار تكنولوجيا في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2w-N9-3W6">
+                                        <rect key="frame" x="57.5" y="281.5" width="260.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="F2w-N9-3W6" firstAttribute="centerY" secondItem="i86-3F-ElN" secondAttribute="centerY" id="7O1-8e-9o2"/>
+                                    <constraint firstItem="F2w-N9-3W6" firstAttribute="centerX" secondItem="i86-3F-ElN" secondAttribute="centerX" id="mJf-z3-tc9"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XGm-0w-gbF">
@@ -777,35 +786,19 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i86-3F-ElN">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار تكنولوجيا في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2w-N9-3W6">
-                                        <rect key="frame" x="57" y="289.5" width="260.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="F2w-N9-3W6" firstAttribute="centerY" secondItem="i86-3F-ElN" secondAttribute="centerY" id="7O1-8e-9o2"/>
-                                    <constraint firstItem="F2w-N9-3W6" firstAttribute="centerX" secondItem="i86-3F-ElN" secondAttribute="centerX" id="mJf-z3-tc9"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xTr-rr-QPC" firstAttribute="leading" secondItem="FCk-2O-AYH" secondAttribute="leading" id="6UR-SN-C2D"/>
+                            <constraint firstItem="i86-3F-ElN" firstAttribute="top" secondItem="xTr-rr-QPC" secondAttribute="bottom" id="7fe-Gs-4By"/>
                             <constraint firstItem="XGm-0w-gbF" firstAttribute="top" secondItem="xTr-rr-QPC" secondAttribute="bottom" id="9ni-o8-tUU"/>
                             <constraint firstItem="XGm-0w-gbF" firstAttribute="leading" secondItem="FCk-2O-AYH" secondAttribute="leading" id="Du7-gU-DKd"/>
                             <constraint firstItem="xTr-rr-QPC" firstAttribute="top" secondItem="FCk-2O-AYH" secondAttribute="top" id="G60-xd-xI5"/>
                             <constraint firstItem="XGm-0w-gbF" firstAttribute="trailing" secondItem="FCk-2O-AYH" secondAttribute="trailing" id="Jsb-yX-bzd"/>
-                            <constraint firstItem="FCk-2O-AYH" firstAttribute="bottom" secondItem="i86-3F-ElN" secondAttribute="bottom" id="fxz-Cm-c25"/>
-                            <constraint firstItem="i86-3F-ElN" firstAttribute="trailing" secondItem="FCk-2O-AYH" secondAttribute="trailing" id="iqe-4U-d8N"/>
+                            <constraint firstAttribute="bottom" secondItem="i86-3F-ElN" secondAttribute="bottom" id="K5B-a8-YmS"/>
+                            <constraint firstItem="i86-3F-ElN" firstAttribute="trailing" secondItem="FCk-2O-AYH" secondAttribute="trailing" id="cz7-Ka-pn6"/>
                             <constraint firstItem="xTr-rr-QPC" firstAttribute="trailing" secondItem="FCk-2O-AYH" secondAttribute="trailing" id="irE-rq-E2f"/>
-                            <constraint firstItem="i86-3F-ElN" firstAttribute="leading" secondItem="FCk-2O-AYH" secondAttribute="leading" id="nEj-4k-MxO"/>
-                            <constraint firstItem="i86-3F-ElN" firstAttribute="top" secondItem="FCk-2O-AYH" secondAttribute="top" id="qst-7v-Cud"/>
+                            <constraint firstItem="i86-3F-ElN" firstAttribute="leading" secondItem="FCk-2O-AYH" secondAttribute="leading" id="nA3-ar-Vtq"/>
                             <constraint firstItem="XGm-0w-gbF" firstAttribute="bottom" secondItem="FCk-2O-AYH" secondAttribute="bottom" id="xgO-UE-xtG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FCk-2O-AYH"/>
@@ -814,7 +807,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1x-9D-cxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="858"/>
+            <point key="canvasLocation" x="1056.8" y="857.72113943028489"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9mK-d7-k5v">

@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import AlamoFire
-import AlamoFireImage
+import Alamofire
+import AlamofireImage
+import CoreData
 
 class BusinessViewController: UIViewController {
 
