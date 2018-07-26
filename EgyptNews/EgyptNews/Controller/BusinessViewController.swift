@@ -13,16 +13,26 @@ import CoreData
 
 class BusinessViewController: UIViewController {
 
+    @IBOutlet weak var stateView: UIView!
+    @IBOutlet weak var dataStateLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setDelegateForUIControls()
+        setDataSourcceForUIControls()
+    }
+    
+    func setDelegateForUIControls() {
+        tableView.delegate = self
+    }
+    
+    func setDataSourcceForUIControls() {
+        tableView.dataSource = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func refreshButtonPressed(_ sender: Any) {
     }
-
-
+    
 }
 

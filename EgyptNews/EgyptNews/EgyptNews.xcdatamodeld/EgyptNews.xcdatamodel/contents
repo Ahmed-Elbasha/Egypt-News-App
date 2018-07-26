@@ -5,9 +5,8 @@
         <attribute name="articleSourceName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="articleTitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="articleURL" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="publishDate" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="NewsArticle" positionX="-45" positionY="0" width="128" height="120"/>
+        <element name="NewsArticle" positionX="-45" positionY="0" width="128" height="105"/>
     </elements>
 </model>
