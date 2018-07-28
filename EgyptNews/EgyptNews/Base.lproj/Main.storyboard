@@ -81,84 +81,67 @@
                                 <rect key="frame" x="0.0" y="84" width="375" height="534"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsArticle" rowHeight="228" id="BAG-DG-4rj" customClass="BusinessNewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="228"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessNewsArticleCell" rowHeight="80" id="BAG-DG-4rj" customClass="BusinessNewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BAG-DG-4rj" id="Wb0-Ri-0Id">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="227.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ihA-DO-o9o">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="228"/>
-                                                </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEF-YR-8dC">
-                                                    <rect key="frame" x="0.0" y="114" width="375" height="113"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Fl3-ud-A34">
+                                                    <rect key="frame" x="175" y="11" width="184.5" height="60.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Fl3-ud-A34">
-                                                            <rect key="frame" x="177.5" y="28" width="184.5" height="60.5"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا عنوان الخبر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmO-zW-SLX">
-                                                                    <rect key="frame" x="82" y="0.0" width="102.5" height="20.5"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="YzA-DA-Mbo"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا مصدر الخبر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL1-Pi-9cd">
-                                                                    <rect key="frame" x="82" y="20.5" width="102.5" height="20"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-BD-aan">
-                                                                    <rect key="frame" x="0.5" y="40.5" width="184" height="20"/>
-                                                                    <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا تاريخ النشر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioE-WE-pXG">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="98" height="20"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نشر في يوم:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4h-zg-XkL">
-                                                                            <rect key="frame" x="106" y="0.0" width="78" height="20"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                </stackView>
-                                                            </subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا عنوان الخبر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmO-zW-SLX">
+                                                            <rect key="frame" x="82" y="0.0" width="102.5" height="20.5"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="DL1-Pi-9cd" secondAttribute="bottom" constant="20" symbolic="YES" id="2CC-Kg-Sch"/>
-                                                                <constraint firstItem="ZmO-zW-SLX" firstAttribute="centerX" secondItem="DL1-Pi-9cd" secondAttribute="centerX" id="Vvx-nu-dLB"/>
-                                                                <constraint firstItem="DL1-Pi-9cd" firstAttribute="leading" secondItem="Fl3-ud-A34" secondAttribute="leading" constant="82" id="cD4-vA-GdO"/>
-                                                                <constraint firstItem="WhV-BD-aan" firstAttribute="top" secondItem="ZmO-zW-SLX" secondAttribute="bottom" constant="20" id="hmI-QB-3Xk"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="YzA-DA-Mbo"/>
                                                             </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا مصدر الخبر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL1-Pi-9cd">
+                                                            <rect key="frame" x="82" y="20.5" width="102.5" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-BD-aan">
+                                                            <rect key="frame" x="21" y="40.5" width="163.5" height="20"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا تاريخ النشر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioE-WE-pXG">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نشر في يوم:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4h-zg-XkL">
+                                                                    <rect key="frame" x="94.5" y="0.0" width="69" height="20"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20580051369863014" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="Fl3-ud-A34" secondAttribute="trailing" constant="13" id="TYc-v0-kRC"/>
-                                                        <constraint firstItem="Fl3-ud-A34" firstAttribute="top" secondItem="kEF-YR-8dC" secondAttribute="top" constant="28" id="rPS-T4-SpZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DL1-Pi-9cd" secondAttribute="bottom" constant="20" symbolic="YES" id="2CC-Kg-Sch"/>
+                                                        <constraint firstItem="ZmO-zW-SLX" firstAttribute="centerX" secondItem="DL1-Pi-9cd" secondAttribute="centerX" id="Vvx-nu-dLB"/>
+                                                        <constraint firstItem="DL1-Pi-9cd" firstAttribute="leading" secondItem="Fl3-ud-A34" secondAttribute="leading" constant="82" id="cD4-vA-GdO"/>
+                                                        <constraint firstItem="WhV-BD-aan" firstAttribute="top" secondItem="ZmO-zW-SLX" secondAttribute="bottom" constant="20" id="hmI-QB-3Xk"/>
                                                     </constraints>
-                                                </view>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ihA-DO-o9o" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" id="3YJ-ch-19c"/>
-                                                <constraint firstItem="ihA-DO-o9o" firstAttribute="top" secondItem="Wb0-Ri-0Id" secondAttribute="top" id="9kL-d7-etd"/>
-                                                <constraint firstAttribute="trailing" secondItem="ihA-DO-o9o" secondAttribute="trailing" id="EXm-ZX-fM2"/>
-                                                <constraint firstItem="kEF-YR-8dC" firstAttribute="top" secondItem="Wb0-Ri-0Id" secondAttribute="top" constant="114" id="Nwh-sw-wNo"/>
-                                                <constraint firstAttribute="bottom" secondItem="ihA-DO-o9o" secondAttribute="bottom" id="WlP-7E-z1O"/>
-                                                <constraint firstItem="kEF-YR-8dC" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" id="YYT-IR-62A"/>
-                                                <constraint firstAttribute="bottom" secondItem="kEF-YR-8dC" secondAttribute="bottom" id="bDa-lE-ABf"/>
-                                                <constraint firstAttribute="trailing" secondItem="kEF-YR-8dC" secondAttribute="trailing" id="fHu-Cv-qB5"/>
+                                                <constraint firstItem="Fl3-ud-A34" firstAttribute="top" secondItem="Wb0-Ri-0Id" secondAttribute="top" constant="11" id="JO5-xo-838"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fl3-ud-A34" secondAttribute="trailing" constant="15.5" id="Mge-bK-Ovq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="newsArticleImageView" destination="ihA-DO-o9o" id="Dkb-Tq-qwO"/>
-                                            <segue destination="eqe-Tx-fQj" kind="showDetail" id="xWO-Go-bXZ"/>
+                                            <outlet property="newsArticleLabel" destination="ZmO-zW-SLX" id="bFj-Ov-mNQ"/>
+                                            <outlet property="newsArticleSourceLabel" destination="DL1-Pi-9cd" id="1fd-Vo-H7r"/>
+                                            <outlet property="publishDateLabel" destination="ioE-WE-pXG" id="ZUZ-O2-42L"/>
+                                            <segue destination="eqe-Tx-fQj" kind="showDetail" identifier="MoveToShowNewsArticleViewController" id="Vx0-5H-ygO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -214,7 +197,11 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem id="enf-jr-hpy">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" image="back_btn" id="TxS-zG-SSV"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="back_btn" id="TxS-zG-SSV">
+                                            <connections>
+                                                <action selector="returnButtonWasPressed:" destination="eqe-Tx-fQj" id="r9M-DA-ped"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -231,6 +218,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="umV-nM-Yzg"/>
                     </view>
+                    <connections>
+                        <outlet property="newsArticlePreviewWebKitView" destination="n5o-8e-gPZ" id="yUq-Be-kCl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQ7-uX-gmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -962,6 +952,6 @@
         <image name="reload" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fe3-EO-ocV"/>
+        <segue reference="Vx0-5H-ygO"/>
     </inferredMetricsTieBreakers>
 </document>

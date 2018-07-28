@@ -13,6 +13,14 @@ let apiKey = "fee9c999a5064459a9f4954ab9b7a020"
 // We're Storing country code here.
 let country = "eg"
 
+enum Category: String {
+    case business = "Business",
+    arts = "Entertainment",
+    politics = "Politics",
+    sports = "Sports",
+    technology = "Technology"
+}
+
 func getApiRequestUrl(forApiKey apiKey: String, withCountry country: String, withCategory category: String) -> String {
     let apiRequestUrl = "https://newsapi.org/v2/top-headlines?country=\(country)&category=\(category)&apiKey=\(apiKey)"
     return apiRequestUrl

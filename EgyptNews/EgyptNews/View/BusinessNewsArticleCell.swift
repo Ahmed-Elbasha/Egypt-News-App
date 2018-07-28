@@ -10,9 +10,9 @@ import UIKit
 
 class BusinessNewsArticleCell: UITableViewCell {
 
-    @IBOutlet weak var newsArticleImageView: UIImageView!
     @IBOutlet weak var newsArticleSourceLabel: UILabel!
     @IBOutlet weak var newsArticleLabel: UILabel!
+    @IBOutlet weak var publishDateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,9 +25,9 @@ class BusinessNewsArticleCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(withNewsArticle  newsArticle: NewsArticle, andNewsArticleImage image: UIImage ) {
-        newsArticleImageView.image = image
+    func configureCell(withNewsArticle  newsArticle: NewsArticle) {
         newsArticleLabel.text = newsArticle.articleTitle
         newsArticleSourceLabel.text = newsArticle.articleSourceName
+        publishDateLabel.text = newsArticle.publishDate
     }
 }

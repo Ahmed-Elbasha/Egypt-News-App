@@ -7,9 +7,11 @@
 //
 
 import UIKit
-
+import WebKit
 class ShowNewsArticleViewController: UIViewController {
-
+    
+    @IBOutlet weak var newsArticlePreviewWebKitView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +34,7 @@ class ShowNewsArticleViewController: UIViewController {
     }
     */
 
+    @IBAction func returnButtonWasPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
