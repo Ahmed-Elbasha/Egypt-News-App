@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R9j-Qo-uqs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RZU-TL-lbh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <!--آقتصاد-->
         <scene sceneID="V8C-VC-nNL">
             <objects>
-                <viewController id="mpC-Bz-9I8" customClass="BusinessViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BusinessViewController" id="mpC-Bz-9I8" customClass="BusinessViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="onz-Bt-QUW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,45 +27,35 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="46" id="NVK-wA-y4c"/>
                                         </constraints>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="reload"/>
                                         <connections>
                                             <action selector="refreshButtonPressed:" destination="mpC-Bz-9I8" eventType="touchUpInside" id="GUo-jO-HF5"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1W-uf-WqA">
-                                        <rect key="frame" x="137" y="21" width="101" height="23"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raX-DA-enr">
-                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="23"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynE-YW-0hg">
-                                                <rect key="frame" x="53.5" y="0.0" width="47.5" height="23"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="آخبار  الآقتصاد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slq-mn-8Mt">
+                                        <rect key="frame" x="129" y="21" width="116.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="slq-mn-8Mt" firstAttribute="centerY" secondItem="qG8-1r-nB3" secondAttribute="centerY" id="Ijw-0i-DgG"/>
                                     <constraint firstItem="hPY-lI-hjC" firstAttribute="top" secondItem="qG8-1r-nB3" secondAttribute="top" constant="9" id="Z5u-dn-ADn"/>
                                     <constraint firstAttribute="height" constant="64" id="bbd-xm-DXG"/>
                                     <constraint firstAttribute="trailing" secondItem="hPY-lI-hjC" secondAttribute="trailing" constant="8" id="coY-sB-i85"/>
                                     <constraint firstAttribute="bottom" secondItem="hPY-lI-hjC" secondAttribute="bottom" constant="9" id="fRH-qt-hSD"/>
-                                    <constraint firstItem="O1W-uf-WqA" firstAttribute="centerY" secondItem="qG8-1r-nB3" secondAttribute="centerY" id="oL0-FT-Gba"/>
-                                    <constraint firstItem="O1W-uf-WqA" firstAttribute="centerX" secondItem="qG8-1r-nB3" secondAttribute="centerX" id="rif-4v-coQ"/>
+                                    <constraint firstItem="slq-mn-8Mt" firstAttribute="centerX" secondItem="qG8-1r-nB3" secondAttribute="centerX" id="v3u-Cr-rFS"/>
                                     <constraint firstItem="hPY-lI-hjC" firstAttribute="centerY" secondItem="qG8-1r-nB3" secondAttribute="centerY" id="vQr-1n-jvp"/>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii8-II-3ei">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار اقتصاد في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scE-Mm-kFn">
-                                        <rect key="frame" x="66.5" y="257" width="243.5" height="20.5"/>
+                                        <rect key="frame" x="66.5" y="281.5" width="243.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -78,21 +68,21 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Rh-AN-AmM">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessNewsArticleCell" rowHeight="80" id="BAG-DG-4rj" customClass="BusinessNewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessNewsArticleCell" rowHeight="108" id="BAG-DG-4rj" customClass="BusinessNewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BAG-DG-4rj" id="Wb0-Ri-0Id">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Fl3-ud-A34">
-                                                    <rect key="frame" x="175" y="11" width="184.5" height="60.5"/>
+                                                    <rect key="frame" x="16" y="11" width="343.5" height="60.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا عنوان الخبر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmO-zW-SLX">
-                                                            <rect key="frame" x="82" y="0.0" width="102.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="343.5" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="YzA-DA-Mbo"/>
                                                             </constraints>
@@ -101,13 +91,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا مصدر الخبر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL1-Pi-9cd">
-                                                            <rect key="frame" x="82" y="20.5" width="102.5" height="20"/>
+                                                            <rect key="frame" x="0.0" y="20.5" width="343.5" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-BD-aan">
-                                                            <rect key="frame" x="21" y="40.5" width="163.5" height="20"/>
+                                                            <rect key="frame" x="180" y="40.5" width="163.5" height="20"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا تاريخ النشر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioE-WE-pXG">
                                                                     <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
@@ -127,7 +117,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="DL1-Pi-9cd" secondAttribute="bottom" constant="20" symbolic="YES" id="2CC-Kg-Sch"/>
                                                         <constraint firstItem="ZmO-zW-SLX" firstAttribute="centerX" secondItem="DL1-Pi-9cd" secondAttribute="centerX" id="Vvx-nu-dLB"/>
-                                                        <constraint firstItem="DL1-Pi-9cd" firstAttribute="leading" secondItem="Fl3-ud-A34" secondAttribute="leading" constant="82" id="cD4-vA-GdO"/>
+                                                        <constraint firstItem="DL1-Pi-9cd" firstAttribute="leading" secondItem="Fl3-ud-A34" secondAttribute="leading" id="cD4-vA-GdO"/>
                                                         <constraint firstItem="WhV-BD-aan" firstAttribute="top" secondItem="ZmO-zW-SLX" secondAttribute="bottom" constant="20" id="hmI-QB-3Xk"/>
                                                     </constraints>
                                                 </stackView>
@@ -135,6 +125,7 @@
                                             <constraints>
                                                 <constraint firstItem="Fl3-ud-A34" firstAttribute="top" secondItem="Wb0-Ri-0Id" secondAttribute="top" constant="11" id="JO5-xo-838"/>
                                                 <constraint firstAttribute="trailing" secondItem="Fl3-ud-A34" secondAttribute="trailing" constant="15.5" id="Mge-bK-Ovq"/>
+                                                <constraint firstItem="Fl3-ud-A34" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" constant="16" id="ixQ-gC-d8w"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -245,24 +236,18 @@
                                         <state key="normal" image="reload"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhh-ER-AUN">
-                                        <rect key="frame" x="137" y="21" width="101" height="23"/>
+                                        <rect key="frame" x="147.5" y="21" width="80.5" height="23"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eet-eb-OdT">
-                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="آخبار الفن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eet-eb-OdT">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="23"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9i-g7-c4O">
-                                                <rect key="frame" x="53.5" y="0.0" width="47.5" height="23"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="M83-MV-SEn" secondAttribute="bottom" constant="9" id="82b-Jx-2fr"/>
                                     <constraint firstItem="xhh-ER-AUN" firstAttribute="centerX" secondItem="DJ8-SO-We2" secondAttribute="centerX" id="Afc-77-hDO"/>
@@ -274,10 +259,10 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikw-Lj-uTE">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار فن في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-Gy-yHy">
-                                        <rect key="frame" x="79.5" y="289" width="216" height="20.5"/>
+                                        <rect key="frame" x="79.5" y="313.5" width="216" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -418,24 +403,18 @@
                                         <state key="normal" image="reload"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSs-EY-eAx">
-                                        <rect key="frame" x="137" y="21" width="101" height="23"/>
+                                        <rect key="frame" x="132.5" y="21" width="110.5" height="23"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRP-7c-kFD">
-                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="آخبار السياسة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRP-7c-kFD">
+                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="23"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23v-zl-ima">
-                                                <rect key="frame" x="53.5" y="0.0" width="47.5" height="23"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="lSs-EY-eAx" firstAttribute="centerY" secondItem="7kr-RO-aWF" secondAttribute="centerY" id="4DB-6p-eMD"/>
                                     <constraint firstAttribute="height" constant="64" id="7fZ-7M-MQs"/>
@@ -463,7 +442,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8IF-8j-0v0">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsArticle" rowHeight="228" id="pZU-9m-bub" customClass="PoliticsNewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
@@ -574,6 +553,86 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="-618.44077961019491"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="bO5-dT-cLa">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="RZU-TL-lbh" customClass="HomeViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="poV-KF-29t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMx-c5-fdV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="64"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkp-Vh-oCu">
+                                        <rect key="frame" x="152.5" y="20.5" width="71.5" height="23"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مصر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCM-yh-1Bx">
+                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="23"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="آخبار" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etq-8i-gnZ">
+                                                <rect key="frame" x="37.5" y="0.0" width="34" height="23"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="1U6-Rd-14L"/>
+                                    <constraint firstItem="jkp-Vh-oCu" firstAttribute="centerY" secondItem="NMx-c5-fdV" secondAttribute="centerY" id="QiX-gD-00p"/>
+                                    <constraint firstItem="jkp-Vh-oCu" firstAttribute="centerX" secondItem="NMx-c5-fdV" secondAttribute="centerX" id="STh-tk-fES"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4EH-jN-xba">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCategoryCell" textLabel="3Jf-WQ-xFn" style="IBUITableViewCellStyleDefault" id="7PW-Db-1Tp">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7PW-Db-1Tp" id="Fah-qO-n4S">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Jf-WQ-xFn">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NMx-c5-fdV" firstAttribute="top" secondItem="Nfk-5D-W6Y" secondAttribute="top" id="F6s-cF-2zd"/>
+                            <constraint firstItem="4EH-jN-xba" firstAttribute="bottom" secondItem="Nfk-5D-W6Y" secondAttribute="bottom" id="Gwd-OY-gJX"/>
+                            <constraint firstItem="4EH-jN-xba" firstAttribute="top" secondItem="NMx-c5-fdV" secondAttribute="bottom" id="KYl-Ea-LAG"/>
+                            <constraint firstItem="NMx-c5-fdV" firstAttribute="trailing" secondItem="Nfk-5D-W6Y" secondAttribute="trailing" id="MIR-T7-9qm"/>
+                            <constraint firstItem="NMx-c5-fdV" firstAttribute="leading" secondItem="Nfk-5D-W6Y" secondAttribute="leading" id="dUT-ez-QWB"/>
+                            <constraint firstItem="4EH-jN-xba" firstAttribute="trailing" secondItem="Nfk-5D-W6Y" secondAttribute="trailing" id="lKb-9U-0T8"/>
+                            <constraint firstItem="4EH-jN-xba" firstAttribute="leading" secondItem="Nfk-5D-W6Y" secondAttribute="leading" id="mHV-lK-xGU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nfk-5D-W6Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="4EH-jN-xba" id="KGD-Hq-iyf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqe-IG-hXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.80000000000001" y="-131.78410794602701"/>
+        </scene>
         <!--رياضة-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -593,24 +652,18 @@
                                         <state key="normal" image="reload"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4p-ED-Zeg">
-                                        <rect key="frame" x="137" y="21" width="101" height="23"/>
+                                        <rect key="frame" x="135" y="21" width="106" height="23"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSF-zd-dfr">
-                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="آخبار الرياضة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSF-zd-dfr">
+                                                <rect key="frame" x="0.0" y="0.0" width="106" height="23"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgn-jZ-K3I">
-                                                <rect key="frame" x="53.5" y="0.0" width="47.5" height="23"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="7DH-lT-jKQ"/>
                                     <constraint firstItem="dEJ-rR-enS" firstAttribute="top" secondItem="g6p-fp-R5u" secondAttribute="top" constant="9" id="ERr-fc-gyo"/>
@@ -622,10 +675,10 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mK0-aK-owC">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار رياضة في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Av-Re-L55">
-                                        <rect key="frame" x="68.5" y="257.5" width="237.5" height="20.5"/>
+                                        <rect key="frame" x="68.5" y="282" width="237.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -638,7 +691,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AqY-us-FUC">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsArticle" rowHeight="228" id="d2Q-eV-HDA" customClass="SportsNewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
@@ -766,24 +819,18 @@
                                         <state key="normal" image="reload"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRl-GD-k5D">
-                                        <rect key="frame" x="137" y="21" width="101" height="23"/>
+                                        <rect key="frame" x="120" y="21" width="136" height="23"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpN-wu-IyY">
-                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="آخبار التكنولوجيا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpN-wu-IyY">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="23"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sii-le-fc7">
-                                                <rect key="frame" x="53.5" y="0.0" width="47.5" height="23"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="IRl-GD-k5D" firstAttribute="centerX" secondItem="xTr-rr-QPC" secondAttribute="centerX" id="FkF-GN-i5X"/>
                                     <constraint firstItem="IRl-GD-k5D" firstAttribute="centerY" secondItem="xTr-rr-QPC" secondAttribute="centerY" id="GM9-FK-9sH"/>
@@ -811,7 +858,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XGm-0w-gbF">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsArticle" rowHeight="228" id="nAT-NF-IgW" customClass="TechnologyNewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
@@ -919,28 +966,6 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="857.72113943028489"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="9mK-d7-k5v">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="R9j-Qo-uqs" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MnA-Fl-NiW">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="H4r-0O-61n"/>
-                        <segue destination="XBX-44-PzE" kind="relationship" relationship="viewControllers" id="cE2-rK-Jeg"/>
-                        <segue destination="aDA-RV-F31" kind="relationship" relationship="viewControllers" id="wRy-A4-MHv"/>
-                        <segue destination="g9L-3H-LNX" kind="relationship" relationship="viewControllers" id="Ovn-Rc-acB"/>
-                        <segue destination="mpC-Bz-9I8" kind="relationship" relationship="viewControllers" id="pZi-to-9iD"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f5U-7E-ffo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
-        </scene>
     </scenes>
     <resources>
         <image name="back_btn" width="13" height="21"/>
@@ -952,6 +977,6 @@
         <image name="reload" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vx0-5H-ygO"/>
+        <segue reference="U72-Sh-Vb5"/>
     </inferredMetricsTieBreakers>
 </document>
