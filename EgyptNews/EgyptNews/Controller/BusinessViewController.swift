@@ -18,8 +18,11 @@ class BusinessViewController: UIViewController {
     @IBOutlet weak var stateView: UIView!
     @IBOutlet weak var dataStateLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+
     
     var newsArticles: [NewsArticle]!
+    var imageUrls: [String]!
+    var images: [UIImage]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +60,14 @@ class BusinessViewController: UIViewController {
                 newArticle.setValue(articleUri, forKey: "articleURL")
                 let publishDate = article["publishedAt"] as! String
                 newArticle.setValue(publishDate, forKey: "publishDate")
+                var articleImageUrl = article["urlToImage"] as! String
+                
+                if articleImageUrl != nil {
+                    newsArticle?.setValue(articleImageUrl, forKey: "articleImageUrl")
+                } else {
+                    articleImageUrl = ""
+                    newsArticle?.setValue(articleImageUrl, forKey: "articleImageUrl")
+                }
                 
                 do {
                     try managedContext.save()
@@ -75,11 +86,30 @@ class BusinessViewController: UIViewController {
         
         do {
             newsArticles = try managedContext.fetch(fetchRequest)
+            for newsArticle in newsArticles {
+                guard var newsArticleImageUrl = newsArticle.articleImageUrl else { return }
+                    newsArticleImageUrl = ""
+                imageUrls.append(newsArticleImageUrl)
+            }
             print("Data is Fetched.")
             completion(true)
         } catch {
             print("Fetch Operation Failed.. \(error.localizedDescription) ")
             completion(false)
+        }
+    }
+    
+    func fetchNewsArticlesImages(completion: (_ complete: Bool) -> () ) {
+        for imageUrl in imageUrls {
+            Alamofire.request(imageUrl).responseImage { (response) in
+                guard var image = response.result.value else { return }
+                if image != nil {
+                    self.images.append(image)
+                } else {
+                    image = UIImage(named: "no_image")!
+                    self.images.append(image)
+                }
+            }
         }
     }
     

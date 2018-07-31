@@ -34,7 +34,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="آخبار  الآقتصاد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slq-mn-8Mt">
-                                        <rect key="frame" x="129" y="21" width="116.5" height="23"/>
+                                        <rect key="frame" x="129.5" y="21" width="116.5" height="23"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مفيش اخبار اقتصاد في الوقت الحالي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scE-Mm-kFn">
-                                        <rect key="frame" x="66.5" y="281.5" width="243.5" height="20.5"/>
+                                        <rect key="frame" x="66" y="281.5" width="243.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -71,67 +71,91 @@
                                 <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessNewsArticleCell" rowHeight="108" id="BAG-DG-4rj" customClass="BusinessNewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="108"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessNewsArticleCell" rowHeight="210" id="BAG-DG-4rj" customClass="BusinessNewsArticleCell" customModule="EgyptNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="210"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BAG-DG-4rj" id="Wb0-Ri-0Id">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Fl3-ud-A34">
-                                                    <rect key="frame" x="16" y="11" width="343.5" height="60.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image" translatesAutoresizingMaskIntoConstraints="NO" id="oDb-wU-brF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ns7-zB-oD4">
+                                                    <rect key="frame" x="0.0" y="130" width="375" height="44"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا عنوان الخبر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmO-zW-SLX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="343.5" height="20.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="YzA-DA-Mbo"/>
-                                                            </constraints>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article Title Is Here." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2Z-4q-GKx">
+                                                            <rect key="frame" x="16" y="12" width="351" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا مصدر الخبر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL1-Pi-9cd">
-                                                            <rect key="frame" x="0.0" y="20.5" width="343.5" height="20"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-BD-aan">
-                                                            <rect key="frame" x="180" y="40.5" width="163.5" height="20"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا تاريخ النشر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioE-WE-pXG">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="20"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نشر في يوم:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4h-zg-XkL">
-                                                                    <rect key="frame" x="94.5" y="0.0" width="69" height="20"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
                                                     </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20580051369999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="DL1-Pi-9cd" secondAttribute="bottom" constant="20" symbolic="YES" id="2CC-Kg-Sch"/>
-                                                        <constraint firstItem="ZmO-zW-SLX" firstAttribute="centerX" secondItem="DL1-Pi-9cd" secondAttribute="centerX" id="Vvx-nu-dLB"/>
-                                                        <constraint firstItem="DL1-Pi-9cd" firstAttribute="leading" secondItem="Fl3-ud-A34" secondAttribute="leading" id="cD4-vA-GdO"/>
-                                                        <constraint firstItem="WhV-BD-aan" firstAttribute="top" secondItem="ZmO-zW-SLX" secondAttribute="bottom" constant="20" id="hmI-QB-3Xk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="s2Z-4q-GKx" secondAttribute="trailing" constant="8" id="0dq-Rt-ewu"/>
+                                                        <constraint firstAttribute="height" constant="44" id="KmB-TQ-qv9"/>
+                                                        <constraint firstAttribute="bottom" secondItem="s2Z-4q-GKx" secondAttribute="bottom" constant="11" id="Laq-c3-5Wj"/>
+                                                        <constraint firstItem="s2Z-4q-GKx" firstAttribute="leading" secondItem="ns7-zB-oD4" secondAttribute="leading" constant="16" id="S33-Lk-zHm"/>
+                                                        <constraint firstItem="s2Z-4q-GKx" firstAttribute="centerY" secondItem="ns7-zB-oD4" secondAttribute="centerY" id="bgb-6g-6lP"/>
+                                                        <constraint firstItem="s2Z-4q-GKx" firstAttribute="top" secondItem="ns7-zB-oD4" secondAttribute="top" constant="12" id="wGZ-75-69c"/>
                                                     </constraints>
-                                                </stackView>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0Z-ic-syo">
+                                                    <rect key="frame" x="0.0" y="174" width="375" height="36"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="publish date is here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWt-eH-mTq">
+                                                            <rect key="frame" x="217" y="8" width="150" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcd-Eh-yki">
+                                                            <rect key="frame" x="199" y="7" width="6" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source Name Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2h-Dj-uCc">
+                                                            <rect key="frame" x="45" y="8" width="145" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="1iK-dn-cBQ"/>
+                                                        <constraint firstItem="PWt-eH-mTq" firstAttribute="top" secondItem="v0Z-ic-syo" secondAttribute="top" constant="8" id="4yY-Hf-v2P"/>
+                                                        <constraint firstItem="V2h-Dj-uCc" firstAttribute="top" secondItem="v0Z-ic-syo" secondAttribute="top" constant="8" id="FHh-91-iAJ"/>
+                                                        <constraint firstItem="xcd-Eh-yki" firstAttribute="bottom" secondItem="v0Z-ic-syo" secondAttribute="bottomMargin" id="S1C-b1-LIA"/>
+                                                        <constraint firstItem="PWt-eH-mTq" firstAttribute="leading" secondItem="xcd-Eh-yki" secondAttribute="trailing" constant="12" id="XOJ-D5-gT7"/>
+                                                        <constraint firstItem="V2h-Dj-uCc" firstAttribute="leading" secondItem="v0Z-ic-syo" secondAttribute="leading" constant="45" id="db0-Wh-wmV"/>
+                                                        <constraint firstItem="xcd-Eh-yki" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V2h-Dj-uCc" secondAttribute="trailing" constant="8" symbolic="YES" id="rSH-gg-VR8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="PWt-eH-mTq" secondAttribute="bottom" constant="7" id="uKR-yo-BU2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="PWt-eH-mTq" secondAttribute="trailing" constant="8" id="yGM-L9-LHM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="V2h-Dj-uCc" secondAttribute="bottom" constant="7" id="zqG-0b-5wL"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Fl3-ud-A34" firstAttribute="top" secondItem="Wb0-Ri-0Id" secondAttribute="top" constant="11" id="JO5-xo-838"/>
-                                                <constraint firstAttribute="trailing" secondItem="Fl3-ud-A34" secondAttribute="trailing" constant="15.5" id="Mge-bK-Ovq"/>
-                                                <constraint firstItem="Fl3-ud-A34" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" constant="16" id="ixQ-gC-d8w"/>
+                                                <constraint firstItem="v0Z-ic-syo" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" id="0ak-Ee-pWO"/>
+                                                <constraint firstItem="ns7-zB-oD4" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" id="CpS-Ki-ZXk"/>
+                                                <constraint firstAttribute="trailing" secondItem="oDb-wU-brF" secondAttribute="trailing" id="Gym-Y2-jwO"/>
+                                                <constraint firstAttribute="bottom" secondItem="v0Z-ic-syo" secondAttribute="bottom" id="Obj-q4-Ery"/>
+                                                <constraint firstAttribute="trailing" secondItem="ns7-zB-oD4" secondAttribute="trailing" id="khL-6x-rq7"/>
+                                                <constraint firstAttribute="trailing" secondItem="v0Z-ic-syo" secondAttribute="trailing" id="nGM-jq-8it"/>
+                                                <constraint firstItem="oDb-wU-brF" firstAttribute="top" secondItem="Wb0-Ri-0Id" secondAttribute="top" id="p2v-7n-mM8"/>
+                                                <constraint firstItem="oDb-wU-brF" firstAttribute="leading" secondItem="Wb0-Ri-0Id" secondAttribute="leading" id="vdI-HO-Yui"/>
+                                                <constraint firstItem="v0Z-ic-syo" firstAttribute="top" secondItem="ns7-zB-oD4" secondAttribute="bottom" id="wDv-Lg-jsM"/>
+                                                <constraint firstItem="v0Z-ic-syo" firstAttribute="top" secondItem="oDb-wU-brF" secondAttribute="bottom" id="xaS-mc-pVt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="newsArticleLabel" destination="ZmO-zW-SLX" id="bFj-Ov-mNQ"/>
-                                            <outlet property="newsArticleSourceLabel" destination="DL1-Pi-9cd" id="1fd-Vo-H7r"/>
-                                            <outlet property="publishDateLabel" destination="ioE-WE-pXG" id="ZUZ-O2-42L"/>
+                                            <outlet property="newsArticleImageView" destination="oDb-wU-brF" id="X0Z-yy-YFK"/>
+                                            <outlet property="newsArticleLabel" destination="s2Z-4q-GKx" id="iaM-90-He2"/>
+                                            <outlet property="newsArticleSourceLabel" destination="V2h-Dj-uCc" id="BYx-qW-ZWC"/>
+                                            <outlet property="publishDateLabel" destination="PWt-eH-mTq" id="oT1-ij-Nay"/>
                                             <segue destination="eqe-Tx-fQj" kind="showDetail" identifier="MoveToShowNewsArticleViewController" id="Vx0-5H-ygO"/>
                                         </connections>
                                     </tableViewCell>
@@ -220,7 +244,7 @@
         <!--فن-->
         <scene sceneID="Eyp-3p-9c8">
             <objects>
-                <viewController id="g9L-3H-LNX" customClass="ArtsViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArtsViewController" id="g9L-3H-LNX" customClass="ArtsViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQ9-eF-GQj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,7 +411,7 @@
         <!--سياسة-->
         <scene sceneID="ZrW-7S-8fe">
             <objects>
-                <viewController id="aDA-RV-F31" customClass="PoliticsViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PoliticsViewController" id="aDA-RV-F31" customClass="PoliticsViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M6w-cj-OgJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -636,7 +660,7 @@
         <!--رياضة-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SportsViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SportsViewController" id="BYZ-38-t0r" customClass="SportsViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -803,7 +827,7 @@
         <!--تكنولوجيا-->
         <scene sceneID="Urg-pN-Scp">
             <objects>
-                <viewController id="XBX-44-PzE" customClass="TechnologyViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TechnologyViewController" id="XBX-44-PzE" customClass="TechnologyViewController" customModule="EgyptNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bPv-Nh-cFY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -969,6 +993,7 @@
     </scenes>
     <resources>
         <image name="back_btn" width="13" height="21"/>
+        <image name="no_image" width="150" height="150"/>
         <image name="noun_Business_1682759" width="30" height="30"/>
         <image name="noun_Sports_909439" width="30" height="30"/>
         <image name="noun_Technology_345852" width="30" height="30"/>
@@ -977,6 +1002,6 @@
         <image name="reload" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U72-Sh-Vb5"/>
+        <segue reference="Vx0-5H-ygO"/>
     </inferredMetricsTieBreakers>
 </document>
