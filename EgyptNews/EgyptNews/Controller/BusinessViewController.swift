@@ -61,9 +61,8 @@ class BusinessViewController: UIViewController {
                 let publishDate = article["publishedAt"] as! String
                 newArticle.setValue(publishDate, forKey: "publishDate")
                 var articleImageUrl = article["urlToImage"] as! String
-                
-                if articleImageUrl != nil {
-                    newsArticle?.setValue(articleImageUrl, forKey: "articleImageUrl")
+                if let imageUrl = articleImageUrl as? String {
+                    newsArticle?.setValue(imageUrl, forKey: "articleImageUrl")
                 } else {
                     articleImageUrl = ""
                     newsArticle?.setValue(articleImageUrl, forKey: "articleImageUrl")
@@ -80,16 +79,18 @@ class BusinessViewController: UIViewController {
         handler(true)
     }
     
-    func fetchNewsArticleData(completion: (_ complete: Bool) -> () ) {
+    func storeNewsArticleData(completion: (_ complete: Bool) -> () ) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
         let fetchRequest = NSFetchRequest<NewsArticle>(entityName: "NewsArticle")
         
         do {
             newsArticles = try managedContext.fetch(fetchRequest)
             for newsArticle in newsArticles {
-                guard var newsArticleImageUrl = newsArticle.articleImageUrl else { return }
-                    newsArticleImageUrl = ""
-                imageUrls.append(newsArticleImageUrl)
+                let newsArticleImageUrl = newsArticle.articleImageUrl
+                
+                if let imageUrl = newsArticleImageUrl as? String {
+                    imageUrls.append(imageUrl)
+                }
             }
             print("Data is Fetched.")
             completion(true)
@@ -102,11 +103,8 @@ class BusinessViewController: UIViewController {
     func fetchNewsArticlesImages(completion: (_ complete: Bool) -> () ) {
         for imageUrl in imageUrls {
             Alamofire.request(imageUrl).responseImage { (response) in
-                guard var image = response.result.value else { return }
-                if image != nil {
-                    self.images.append(image)
-                } else {
-                    image = UIImage(named: "no_image")!
+                guard let newsArticleImage = response.result.value else { return }
+                if let image = newsArticleImage as? UIImage {
                     self.images.append(image)
                 }
             }
@@ -128,7 +126,7 @@ class BusinessViewController: UIViewController {
         retrieveUris { (complete) in
             if complete {
                 self.tableView.reloadData()
-                self.fetchNewsArticleData(completion: { (complete) in
+                self.storeNewsArticleData(completion: { (complete) in
                     if complete {}
                 })
             } else {
