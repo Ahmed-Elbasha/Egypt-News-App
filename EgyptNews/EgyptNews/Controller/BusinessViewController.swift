@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import AlamofireImage
 import CoreData
+import Picasso
 
 let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
