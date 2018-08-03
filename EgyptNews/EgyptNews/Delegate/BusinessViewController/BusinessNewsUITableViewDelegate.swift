@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 extension BusinessViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -17,19 +18,20 @@ extension BusinessViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "BusinessNewsArticleCell", for: indexPath) as? BusinessNewsArticleCell else { return UITableViewCell() }
         let newsArticle = newsArticles[indexPath.row]
-        let currentImage: UIImage!
-        if newsArticle.articleImageUrl != "" {
-            currentImage = images[indexPath.row]
-        } else {
-            currentImage = UIImage(named: "no_image")
-        }
+        let resource = ImageResource(downloadURL: URL(string: imageUrls[indexPath.row])!)
+//        let currentImage: UIImage!
+//        if newsArticle.articleImageUrl != "" {
+//            currentImage = images[indexPath.row]
+//        } else {
+//            currentImage = UIImage(named: "no_image")
+//        }
         if cell.isKind(of: BusinessNewsArticleCell.self) {
-            cell.configureCell(withNewsArticle: newsArticle, andNewsArticleImage: currentImage)
+            cell.configureCell(withNewsArticle: newsArticle)
         } else if cell.isKind(of: UITableViewCell.self) {
             cell.newsArticleLabel.text = newsArticle.articleTitle
             cell.newsArticleSourceLabel.text = newsArticle.articleSourceName
             cell.publishDateLabel.text = newsArticle.publishDate
-            cell.newsArticleImageView.image = currentImage
+            cell.newsArticleImageView.kf.setImage(with: resource, placeholder: UIImage(named: "no_image"), options: <#T##KingfisherOptionsInfo?#>, progressBlock: <#T##DownloadProgressBlock?##DownloadProgressBlock?##(Int64, Int64) -> Void#>, completionHandler: <#T##CompletionHandler?##CompletionHandler?##(Image?, NSError?, CacheType, URL?) -> Void#>)
         }
         
         return cell

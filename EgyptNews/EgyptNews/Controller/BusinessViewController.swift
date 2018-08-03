@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import AlamofireImage
 import CoreData
-import Picasso
+import Kingfisher
 
 let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
@@ -101,16 +101,16 @@ class BusinessViewController: UIViewController {
         }
     }
     
-    func fetchNewsArticlesImages(completion: (_ complete: Bool) -> () ) {
-        for imageUrl in imageUrls {
-            Alamofire.request(imageUrl).responseImage { (response) in
-                guard let newsArticleImage = response.result.value else { return }
-                if let image = newsArticleImage as? UIImage {
-                    self.images.append(image)
-                }
-            }
-        }
-    }
+//    func fetchNewsArticlesImages(completion: (_ complete: Bool) -> () ) {
+//        for imageUrl in imageUrls {
+//            Alamofire.request(imageUrl).responseImage { (response) in
+//                guard let newsArticleImage = response.result.value else { return }
+//                if let image = newsArticleImage as? UIImage {
+//                    self.images.append(image)
+//                }
+//            }
+//        }
+//    }
     
     func cancelAllSessions() {
         Alamofire.SessionManager.default.session.getTasksWithCompletionHandler { (sessionDataTask, sessionUploadTask, sessionDownloadTak) in

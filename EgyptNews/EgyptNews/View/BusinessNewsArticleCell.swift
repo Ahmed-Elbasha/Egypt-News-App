@@ -26,7 +26,7 @@ class BusinessNewsArticleCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(withNewsArticle  newsArticle: NewsArticle, andNewsArticleImage image: UIImage) {
+    func configureCell(withNewsArticle  newsArticle: NewsArticle) {
         newsArticleLabel.text = newsArticle.articleTitle
         newsArticleSourceLabel.text = newsArticle.articleSourceName
         publishDateLabel.text = newsArticle.publishDate
