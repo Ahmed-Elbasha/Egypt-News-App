@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BusinessNewsArticleCell: UITableViewCell {
 
@@ -26,10 +27,10 @@ class BusinessNewsArticleCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(withNewsArticle  newsArticle: NewsArticle) {
+    func configureCell(withNewsArticle  newsArticle: NewsArticle, resource: ImageResource) {
         newsArticleLabel.text = newsArticle.articleTitle
         newsArticleSourceLabel.text = newsArticle.articleSourceName
         publishDateLabel.text = newsArticle.publishDate
-        newsArticleImageView.image = image
+        newsArticleImageView.kf.setImage(with: resource, placeholder: UIImage(named: "no_image"), options: nil, progressBlock: nil, completionHandler: nil)
     }
 }

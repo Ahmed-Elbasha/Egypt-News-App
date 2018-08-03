@@ -26,12 +26,12 @@ extension BusinessViewController: UITableViewDelegate, UITableViewDataSource {
 //            currentImage = UIImage(named: "no_image")
 //        }
         if cell.isKind(of: BusinessNewsArticleCell.self) {
-            cell.configureCell(withNewsArticle: newsArticle)
+            cell.configureCell(withNewsArticle: newsArticle, resource: resource)
         } else if cell.isKind(of: UITableViewCell.self) {
             cell.newsArticleLabel.text = newsArticle.articleTitle
             cell.newsArticleSourceLabel.text = newsArticle.articleSourceName
             cell.publishDateLabel.text = newsArticle.publishDate
-            cell.newsArticleImageView.kf.setImage(with: resource, placeholder: UIImage(named: "no_image"), options: <#T##KingfisherOptionsInfo?#>, progressBlock: <#T##DownloadProgressBlock?##DownloadProgressBlock?##(Int64, Int64) -> Void#>, completionHandler: <#T##CompletionHandler?##CompletionHandler?##(Image?, NSError?, CacheType, URL?) -> Void#>)
+            cell.newsArticleImageView.kf.setImage(with: resource, placeholder: UIImage(named: "no_image"), options: nil, progressBlock: nil, completionHandler: nil)
         }
         
         return cell
