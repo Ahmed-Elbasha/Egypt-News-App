@@ -12,13 +12,14 @@ import Kingfisher
 
 extension BusinessViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsArticles.count
+        return newsArticles!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "BusinessNewsArticleCell", for: indexPath) as? BusinessNewsArticleCell else { return UITableViewCell() }
-        let newsArticle = newsArticles[indexPath.row]
-        let resource = ImageResource(downloadURL: URL(string: imageUrls[indexPath.row])!)
+        let newsArticle = newsArticles![indexPath.row]
+        let imageUrl = imageUrls?[indexPath.row]
+        let resource = ImageResource(downloadURL: URL(string: imageUrl!)!, cacheKey: imageUrl)
 //        let currentImage: UIImage!
 //        if newsArticle.articleImageUrl != "" {
 //            currentImage = images[indexPath.row]

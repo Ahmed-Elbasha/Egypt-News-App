@@ -21,9 +21,9 @@ class BusinessViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     
-    var newsArticles: [NewsArticle]!
-    var imageUrls: [String]!
-    var images: [UIImage]!
+    var newsArticles: [NewsArticle]?
+    var imageUrls: [String]?
+    var images: [UIImage]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,11 +86,11 @@ class BusinessViewController: UIViewController {
         
         do {
             newsArticles = try managedContext.fetch(fetchRequest)
-            for newsArticle in newsArticles {
+            for newsArticle in newsArticles! {
                 let newsArticleImageUrl = newsArticle.articleImageUrl
                 
                 if let imageUrl = newsArticleImageUrl as? String {
-                    imageUrls.append(imageUrl)
+                    imageUrls?.append(imageUrl)
                 }
             }
             print("Data is Fetched.")
